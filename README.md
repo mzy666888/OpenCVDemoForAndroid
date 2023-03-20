@@ -3,19 +3,19 @@
 #1、Download OpenCV
 
 从[https://opencv.org/releases/](https://opencv.org/releases/)下载最新版（这个时候最新版为4.7.0版本），选择Android平台的库。
-下载完解压后看到有文件夹：samples和sdk，samples是示例，sdk就是我们要用到的OpenCV库了。
+下载完解压后看到有文件夹：`samples`和`sdk`，`samples`是示例，`sdk`就是我们要用到的`OpenCV`库了。
 
 #2、使用Android studio新建项目
 
-打开AS，创建一个名为DemoForOpenCv的项目
+打开AS，创建一个名为`DemoForOpenCv`的项目
 ![image](https://user-images.githubusercontent.com/2587129/226222107-9acb965a-bf0c-4c9c-bacf-b0d09ccc84e0.png)
 
-选择Empty Activity模板，进入下一步。输入项目名称：DemoForOpenCv。
+选择`Empty Activity`模板，进入下一步。输入项目名称：`DemoForOpenCv`。
 ![image](https://user-images.githubusercontent.com/2587129/226222207-9111fd17-4c06-4d29-a05b-b12ada5e74c4.png)
-等待加载完成，打开项目所在位置，将下载的sdk文件夹拷贝到DemoForOpenCv的根目录中
+等待加载完成，打开项目所在位置，将下载的`sdk`文件夹拷贝到`DemoForOpenCv`的根目录中
 
 
-选择File->New-> Import Module
+选择`File`->`New`->`Import Module`
 
 ![image](https://user-images.githubusercontent.com/2587129/226222688-7d66a062-6fef-46bd-8332-e8e461877e73.png)
 
@@ -25,7 +25,7 @@
 
 此时，你可以这样：
 
-找到settings.gradle文件
+找到`settings.gradle`文件
 ![image](https://user-images.githubusercontent.com/2587129/226223406-6344ca4d-5b49-45d4-8fea-74b6640b1b87.png)
 
 添加如下代码：
@@ -36,7 +36,7 @@ include ':sdk'
 ```
 
 
-找到sdk文件夹下的build.gradle文件，将`apply plugin: 'kotlin-android'`注释掉
+找到sdk文件夹下的`build.gradle`文件，将`apply plugin: 'kotlin-android'`注释掉
 ![image](https://user-images.githubusercontent.com/2587129/226225428-38a6044e-5719-4ac9-a5e9-9f251ade617c.png)
 
 
